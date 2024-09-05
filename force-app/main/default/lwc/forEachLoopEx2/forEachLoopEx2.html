@@ -1,0 +1,48 @@
+<template>
+    
+    <lightning-card>
+
+        <table class="slds-table slds_table_bordered"> 
+            <thead>
+                <tr>
+                    <td>First name</td>
+                    <td>Last name</td>
+                    <td>Age</td>
+                    <td>City</td>
+
+                </tr>
+            </thead>
+            
+            <template for:each={employeeList} for:item="emp">
+                <tr key={emp.id}>
+                    
+                   <td>{emp.fName}</td> 
+                    <td>{emp.lName}</td>
+                    <td>{emp.age}</td>
+                    <td>{emp.City}</td> 
+                </tr>
+                
+    
+    
+            </template>
+
+
+</table>
+
+
+
+
+
+
+
+</lightning-card>
+
+
+
+
+
+
+
+
+
+</template>
